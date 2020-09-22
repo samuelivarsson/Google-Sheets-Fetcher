@@ -1,0 +1,1038 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DF8804125157F8B00FB4A47 /* Sheets_FetcherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8804025157F8B00FB4A47 /* Sheets_FetcherApp.swift */; };
+		4DF8804325157F8B00FB4A47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8804225157F8B00FB4A47 /* ContentView.swift */; };
+		4DF8804525157F8C00FB4A47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF8804425157F8C00FB4A47 /* Assets.xcassets */; };
+		4DF8804825157F8C00FB4A47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF8804725157F8C00FB4A47 /* Preview Assets.xcassets */; };
+		4DF8805325157F8C00FB4A47 /* Sheets_FetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8805225157F8C00FB4A47 /* Sheets_FetcherTests.swift */; };
+		4DF8805E25157F8C00FB4A47 /* Sheets_FetcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8805D25157F8C00FB4A47 /* Sheets_FetcherUITests.swift */; };
+		4DF8807925158D4D00FB4A47 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF8807825158D4D00FB4A47 /* WidgetKit.framework */; };
+		4DF8807B25158D4D00FB4A47 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF8807A25158D4D00FB4A47 /* SwiftUI.framework */; };
+		4DF8807E25158D4D00FB4A47 /* Sheets_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8807D25158D4D00FB4A47 /* Sheets_Widget.swift */; };
+		4DF8808125158D5100FB4A47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF8808025158D5100FB4A47 /* Assets.xcassets */; };
+		4DF8808325158D5100FB4A47 /* Sheets_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8807F25158D4D00FB4A47 /* Sheets_Widget.intentdefinition */; };
+		4DF8808425158D5100FB4A47 /* Sheets_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8807F25158D4D00FB4A47 /* Sheets_Widget.intentdefinition */; };
+		4DF8808725158D5100FB4A47 /* Sheets-WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DF8807625158D4D00FB4A47 /* Sheets-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4DF8809E251626E500FB4A47 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8809D251626E500FB4A47 /* IntentHandler.swift */; };
+		4DF880A6251626E600FB4A47 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF880A5251626E600FB4A47 /* IntentsUI.framework */; };
+		4DF880A9251626E600FB4A47 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF880A8251626E600FB4A47 /* IntentViewController.swift */; };
+		4DF880AC251626E600FB4A47 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF880AA251626E600FB4A47 /* MainInterface.storyboard */; };
+		4DF880B0251626E600FB4A47 /* ShortcutsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DF880A4251626E600FB4A47 /* ShortcutsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4DF880B3251626E600FB4A47 /* Shortcuts.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DF8809B251626E500FB4A47 /* Shortcuts.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4DF880C12516278F00FB4A47 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4DF880C02516278F00FB4A47 /* Intents.intentdefinition */; };
+		4DF880C8251627F800FB4A47 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4DF880C02516278F00FB4A47 /* Intents.intentdefinition */; };
+		4DF880D5251627FB00FB4A47 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4DF880C02516278F00FB4A47 /* Intents.intentdefinition */; };
+		4DF880EC25162C7200FB4A47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8804225157F8B00FB4A47 /* ContentView.swift */; };
+		4DF880F325162C7400FB4A47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8804225157F8B00FB4A47 /* ContentView.swift */; };
+		4DF8815C2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8815B2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift */; };
+		4DF8815D2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8815B2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift */; };
+		4DF8815E2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8815B2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DF8804F25157F8C00FB4A47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF8803525157F8B00FB4A47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DF8803C25157F8B00FB4A47;
+			remoteInfo = "Sheets-Fetcher";
+		};
+		4DF8805A25157F8C00FB4A47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF8803525157F8B00FB4A47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DF8803C25157F8B00FB4A47;
+			remoteInfo = "Sheets-Fetcher";
+		};
+		4DF8808525158D5100FB4A47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF8803525157F8B00FB4A47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DF8807525158D4D00FB4A47;
+			remoteInfo = "Sheets-WidgetExtension";
+		};
+		4DF880AE251626E600FB4A47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF8803525157F8B00FB4A47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DF880A3251626E600FB4A47;
+			remoteInfo = ShortcutsUI;
+		};
+		4DF880B1251626E600FB4A47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF8803525157F8B00FB4A47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DF8809A251626E500FB4A47;
+			remoteInfo = Shortcuts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DF8808B25158D5100FB4A47 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4DF880B0251626E600FB4A47 /* ShortcutsUI.appex in Embed App Extensions */,
+				4DF8808725158D5100FB4A47 /* Sheets-WidgetExtension.appex in Embed App Extensions */,
+				4DF880B3251626E600FB4A47 /* Shortcuts.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4DF8803D25157F8B00FB4A47 /* Sheets-Fetcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sheets-Fetcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF8804025157F8B00FB4A47 /* Sheets_FetcherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheets_FetcherApp.swift; sourceTree = "<group>"; };
+		4DF8804225157F8B00FB4A47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DF8804425157F8C00FB4A47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DF8804725157F8C00FB4A47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4DF8804925157F8C00FB4A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF8804E25157F8C00FB4A47 /* Sheets-FetcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sheets-FetcherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF8805225157F8C00FB4A47 /* Sheets_FetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheets_FetcherTests.swift; sourceTree = "<group>"; };
+		4DF8805425157F8C00FB4A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF8805925157F8C00FB4A47 /* Sheets-FetcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sheets-FetcherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF8805D25157F8C00FB4A47 /* Sheets_FetcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheets_FetcherUITests.swift; sourceTree = "<group>"; };
+		4DF8805F25157F8C00FB4A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF8806E251582FE00FB4A47 /* Sheets-Fetcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sheets-Fetcher.entitlements"; sourceTree = "<group>"; };
+		4DF8807625158D4D00FB4A47 /* Sheets-WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Sheets-WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF8807825158D4D00FB4A47 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4DF8807A25158D4D00FB4A47 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4DF8807D25158D4D00FB4A47 /* Sheets_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheets_Widget.swift; sourceTree = "<group>"; };
+		4DF8807F25158D4D00FB4A47 /* Sheets_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Sheets_Widget.intentdefinition; sourceTree = "<group>"; };
+		4DF8808025158D5100FB4A47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DF8808225158D5100FB4A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF880902515929A00FB4A47 /* Sheets-WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sheets-WidgetExtension.entitlements"; sourceTree = "<group>"; };
+		4DF8809B251626E500FB4A47 /* Shortcuts.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Shortcuts.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF8809D251626E500FB4A47 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		4DF8809F251626E500FB4A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF880A4251626E600FB4A47 /* ShortcutsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShortcutsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF880A5251626E600FB4A47 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		4DF880A8251626E600FB4A47 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		4DF880AB251626E600FB4A47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4DF880AD251626E600FB4A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF880C02516278F00FB4A47 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		4DF8815B2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateWidgetIntentHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DF8803A25157F8B00FB4A47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF8804B25157F8C00FB4A47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF8805625157F8C00FB4A47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF8807325158D4D00FB4A47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF8807B25158D4D00FB4A47 /* SwiftUI.framework in Frameworks */,
+				4DF8807925158D4D00FB4A47 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF88098251626E500FB4A47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF880A1251626E600FB4A47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF880A6251626E600FB4A47 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DF8803425157F8B00FB4A47 = {
+			isa = PBXGroup;
+			children = (
+				4DF880902515929A00FB4A47 /* Sheets-WidgetExtension.entitlements */,
+				4DF8803F25157F8B00FB4A47 /* Sheets-Fetcher */,
+				4DF8805125157F8C00FB4A47 /* Sheets-FetcherTests */,
+				4DF8805C25157F8C00FB4A47 /* Sheets-FetcherUITests */,
+				4DF8807C25158D4D00FB4A47 /* Sheets-Widget */,
+				4DF8809C251626E500FB4A47 /* Shortcuts */,
+				4DF880A7251626E600FB4A47 /* ShortcutsUI */,
+				4DF8807725158D4D00FB4A47 /* Frameworks */,
+				4DF8803E25157F8B00FB4A47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DF8803E25157F8B00FB4A47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DF8803D25157F8B00FB4A47 /* Sheets-Fetcher.app */,
+				4DF8804E25157F8C00FB4A47 /* Sheets-FetcherTests.xctest */,
+				4DF8805925157F8C00FB4A47 /* Sheets-FetcherUITests.xctest */,
+				4DF8807625158D4D00FB4A47 /* Sheets-WidgetExtension.appex */,
+				4DF8809B251626E500FB4A47 /* Shortcuts.appex */,
+				4DF880A4251626E600FB4A47 /* ShortcutsUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DF8803F25157F8B00FB4A47 /* Sheets-Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				4DF8806E251582FE00FB4A47 /* Sheets-Fetcher.entitlements */,
+				4DF8804025157F8B00FB4A47 /* Sheets_FetcherApp.swift */,
+				4DF8804225157F8B00FB4A47 /* ContentView.swift */,
+				4DF8804425157F8C00FB4A47 /* Assets.xcassets */,
+				4DF8804925157F8C00FB4A47 /* Info.plist */,
+				4DF8804625157F8C00FB4A47 /* Preview Content */,
+			);
+			path = "Sheets-Fetcher";
+			sourceTree = "<group>";
+		};
+		4DF8804625157F8C00FB4A47 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4DF8804725157F8C00FB4A47 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4DF8805125157F8C00FB4A47 /* Sheets-FetcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DF8805225157F8C00FB4A47 /* Sheets_FetcherTests.swift */,
+				4DF8805425157F8C00FB4A47 /* Info.plist */,
+			);
+			path = "Sheets-FetcherTests";
+			sourceTree = "<group>";
+		};
+		4DF8805C25157F8C00FB4A47 /* Sheets-FetcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DF8805D25157F8C00FB4A47 /* Sheets_FetcherUITests.swift */,
+				4DF8805F25157F8C00FB4A47 /* Info.plist */,
+			);
+			path = "Sheets-FetcherUITests";
+			sourceTree = "<group>";
+		};
+		4DF8807725158D4D00FB4A47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DF8807825158D4D00FB4A47 /* WidgetKit.framework */,
+				4DF8807A25158D4D00FB4A47 /* SwiftUI.framework */,
+				4DF880A5251626E600FB4A47 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DF8807C25158D4D00FB4A47 /* Sheets-Widget */ = {
+			isa = PBXGroup;
+			children = (
+				4DF8807D25158D4D00FB4A47 /* Sheets_Widget.swift */,
+				4DF8807F25158D4D00FB4A47 /* Sheets_Widget.intentdefinition */,
+				4DF8808025158D5100FB4A47 /* Assets.xcassets */,
+				4DF8808225158D5100FB4A47 /* Info.plist */,
+			);
+			path = "Sheets-Widget";
+			sourceTree = "<group>";
+		};
+		4DF8809C251626E500FB4A47 /* Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				4DF8809D251626E500FB4A47 /* IntentHandler.swift */,
+				4DF8809F251626E500FB4A47 /* Info.plist */,
+				4DF880C02516278F00FB4A47 /* Intents.intentdefinition */,
+				4DF8815B2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift */,
+			);
+			path = Shortcuts;
+			sourceTree = "<group>";
+		};
+		4DF880A7251626E600FB4A47 /* ShortcutsUI */ = {
+			isa = PBXGroup;
+			children = (
+				4DF880A8251626E600FB4A47 /* IntentViewController.swift */,
+				4DF880AA251626E600FB4A47 /* MainInterface.storyboard */,
+				4DF880AD251626E600FB4A47 /* Info.plist */,
+			);
+			path = ShortcutsUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DF8803C25157F8B00FB4A47 /* Sheets-Fetcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF8806225157F8C00FB4A47 /* Build configuration list for PBXNativeTarget "Sheets-Fetcher" */;
+			buildPhases = (
+				4DF8803925157F8B00FB4A47 /* Sources */,
+				4DF8803A25157F8B00FB4A47 /* Frameworks */,
+				4DF8803B25157F8B00FB4A47 /* Resources */,
+				4DF8808B25158D5100FB4A47 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DF8808625158D5100FB4A47 /* PBXTargetDependency */,
+				4DF880AF251626E600FB4A47 /* PBXTargetDependency */,
+				4DF880B2251626E600FB4A47 /* PBXTargetDependency */,
+			);
+			name = "Sheets-Fetcher";
+			productName = "Sheets-Fetcher";
+			productReference = 4DF8803D25157F8B00FB4A47 /* Sheets-Fetcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DF8804D25157F8C00FB4A47 /* Sheets-FetcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF8806525157F8C00FB4A47 /* Build configuration list for PBXNativeTarget "Sheets-FetcherTests" */;
+			buildPhases = (
+				4DF8804A25157F8C00FB4A47 /* Sources */,
+				4DF8804B25157F8C00FB4A47 /* Frameworks */,
+				4DF8804C25157F8C00FB4A47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DF8805025157F8C00FB4A47 /* PBXTargetDependency */,
+			);
+			name = "Sheets-FetcherTests";
+			productName = "Sheets-FetcherTests";
+			productReference = 4DF8804E25157F8C00FB4A47 /* Sheets-FetcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DF8805825157F8C00FB4A47 /* Sheets-FetcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF8806825157F8C00FB4A47 /* Build configuration list for PBXNativeTarget "Sheets-FetcherUITests" */;
+			buildPhases = (
+				4DF8805525157F8C00FB4A47 /* Sources */,
+				4DF8805625157F8C00FB4A47 /* Frameworks */,
+				4DF8805725157F8C00FB4A47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DF8805B25157F8C00FB4A47 /* PBXTargetDependency */,
+			);
+			name = "Sheets-FetcherUITests";
+			productName = "Sheets-FetcherUITests";
+			productReference = 4DF8805925157F8C00FB4A47 /* Sheets-FetcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		4DF8807525158D4D00FB4A47 /* Sheets-WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF8808825158D5100FB4A47 /* Build configuration list for PBXNativeTarget "Sheets-WidgetExtension" */;
+			buildPhases = (
+				4DF8807225158D4D00FB4A47 /* Sources */,
+				4DF8807325158D4D00FB4A47 /* Frameworks */,
+				4DF8807425158D4D00FB4A47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sheets-WidgetExtension";
+			productName = "Sheets-WidgetExtension";
+			productReference = 4DF8807625158D4D00FB4A47 /* Sheets-WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		4DF8809A251626E500FB4A47 /* Shortcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF880B7251626E600FB4A47 /* Build configuration list for PBXNativeTarget "Shortcuts" */;
+			buildPhases = (
+				4DF88097251626E500FB4A47 /* Sources */,
+				4DF88098251626E500FB4A47 /* Frameworks */,
+				4DF88099251626E500FB4A47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shortcuts;
+			productName = Shortcuts;
+			productReference = 4DF8809B251626E500FB4A47 /* Shortcuts.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		4DF880A3251626E600FB4A47 /* ShortcutsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF880B4251626E600FB4A47 /* Build configuration list for PBXNativeTarget "ShortcutsUI" */;
+			buildPhases = (
+				4DF880A0251626E600FB4A47 /* Sources */,
+				4DF880A1251626E600FB4A47 /* Frameworks */,
+				4DF880A2251626E600FB4A47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShortcutsUI;
+			productName = ShortcutsUI;
+			productReference = 4DF880A4251626E600FB4A47 /* ShortcutsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DF8803525157F8B00FB4A47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					4DF8803C25157F8B00FB4A47 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					4DF8804D25157F8C00FB4A47 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 4DF8803C25157F8B00FB4A47;
+					};
+					4DF8805825157F8C00FB4A47 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 4DF8803C25157F8B00FB4A47;
+					};
+					4DF8807525158D4D00FB4A47 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					4DF8809A251626E500FB4A47 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					4DF880A3251626E600FB4A47 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 4DF8803825157F8B00FB4A47 /* Build configuration list for PBXProject "Sheets-Fetcher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DF8803425157F8B00FB4A47;
+			productRefGroup = 4DF8803E25157F8B00FB4A47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DF8803C25157F8B00FB4A47 /* Sheets-Fetcher */,
+				4DF8804D25157F8C00FB4A47 /* Sheets-FetcherTests */,
+				4DF8805825157F8C00FB4A47 /* Sheets-FetcherUITests */,
+				4DF8807525158D4D00FB4A47 /* Sheets-WidgetExtension */,
+				4DF8809A251626E500FB4A47 /* Shortcuts */,
+				4DF880A3251626E600FB4A47 /* ShortcutsUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DF8803B25157F8B00FB4A47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF8804825157F8C00FB4A47 /* Preview Assets.xcassets in Resources */,
+				4DF8804525157F8C00FB4A47 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF8804C25157F8C00FB4A47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF8805725157F8C00FB4A47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF8807425158D4D00FB4A47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF8808125158D5100FB4A47 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF88099251626E500FB4A47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF880A2251626E600FB4A47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF880AC251626E600FB4A47 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DF8803925157F8B00FB4A47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF8804325157F8B00FB4A47 /* ContentView.swift in Sources */,
+				4DF8815C2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift in Sources */,
+				4DF8804125157F8B00FB4A47 /* Sheets_FetcherApp.swift in Sources */,
+				4DF880C8251627F800FB4A47 /* Intents.intentdefinition in Sources */,
+				4DF8808425158D5100FB4A47 /* Sheets_Widget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF8804A25157F8C00FB4A47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF8805325157F8C00FB4A47 /* Sheets_FetcherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF8805525157F8C00FB4A47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF8805E25157F8C00FB4A47 /* Sheets_FetcherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF8807225158D4D00FB4A47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF880D5251627FB00FB4A47 /* Intents.intentdefinition in Sources */,
+				4DF8815D2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift in Sources */,
+				4DF880F325162C7400FB4A47 /* ContentView.swift in Sources */,
+				4DF8808325158D5100FB4A47 /* Sheets_Widget.intentdefinition in Sources */,
+				4DF8807E25158D4D00FB4A47 /* Sheets_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF88097251626E500FB4A47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF880C12516278F00FB4A47 /* Intents.intentdefinition in Sources */,
+				4DF8815E2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift in Sources */,
+				4DF8809E251626E500FB4A47 /* IntentHandler.swift in Sources */,
+				4DF880EC25162C7200FB4A47 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF880A0251626E600FB4A47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF880A9251626E600FB4A47 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DF8805025157F8C00FB4A47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DF8803C25157F8B00FB4A47 /* Sheets-Fetcher */;
+			targetProxy = 4DF8804F25157F8C00FB4A47 /* PBXContainerItemProxy */;
+		};
+		4DF8805B25157F8C00FB4A47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DF8803C25157F8B00FB4A47 /* Sheets-Fetcher */;
+			targetProxy = 4DF8805A25157F8C00FB4A47 /* PBXContainerItemProxy */;
+		};
+		4DF8808625158D5100FB4A47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DF8807525158D4D00FB4A47 /* Sheets-WidgetExtension */;
+			targetProxy = 4DF8808525158D5100FB4A47 /* PBXContainerItemProxy */;
+		};
+		4DF880AF251626E600FB4A47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DF880A3251626E600FB4A47 /* ShortcutsUI */;
+			targetProxy = 4DF880AE251626E600FB4A47 /* PBXContainerItemProxy */;
+		};
+		4DF880B2251626E600FB4A47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DF8809A251626E500FB4A47 /* Shortcuts */;
+			targetProxy = 4DF880B1251626E600FB4A47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DF880AA251626E600FB4A47 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DF880AB251626E600FB4A47 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DF8806025157F8C00FB4A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DF8806125157F8C00FB4A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DF8806325157F8C00FB4A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sheets-Fetcher/Sheets-Fetcher.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Sheets-Fetcher/Preview Content\"";
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Sheets-Fetcher/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Sheets-Fetcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DF8806425157F8C00FB4A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sheets-Fetcher/Sheets-Fetcher.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Sheets-Fetcher/Preview Content\"";
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Sheets-Fetcher/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Sheets-Fetcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4DF8806625157F8C00FB4A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = "Sheets-FetcherTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Sheets-FetcherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sheets-Fetcher.app/Sheets-Fetcher";
+			};
+			name = Debug;
+		};
+		4DF8806725157F8C00FB4A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = "Sheets-FetcherTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Sheets-FetcherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sheets-Fetcher.app/Sheets-Fetcher";
+			};
+			name = Release;
+		};
+		4DF8806925157F8C00FB4A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = "Sheets-FetcherUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Sheets-FetcherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sheets-Fetcher";
+			};
+			name = Debug;
+		};
+		4DF8806A25157F8C00FB4A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = "Sheets-FetcherUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Sheets-FetcherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sheets-Fetcher";
+			};
+			name = Release;
+		};
+		4DF8808925158D5100FB4A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Sheets-WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = "Sheets-Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Sheets-Fetcher.Sheets-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DF8808A25158D5100FB4A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Sheets-WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = "Sheets-Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Sheets-Fetcher.Sheets-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4DF880B5251626E600FB4A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = ShortcutsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Sheets-Fetcher.ShortcutsUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DF880B6251626E600FB4A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = ShortcutsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Sheets-Fetcher.ShortcutsUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4DF880B8251626E600FB4A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = Shortcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Sheets-Fetcher.Shortcuts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DF880B9251626E600FB4A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = Shortcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Sheets-Fetcher.Shortcuts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DF8803825157F8B00FB4A47 /* Build configuration list for PBXProject "Sheets-Fetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF8806025157F8C00FB4A47 /* Debug */,
+				4DF8806125157F8C00FB4A47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF8806225157F8C00FB4A47 /* Build configuration list for PBXNativeTarget "Sheets-Fetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF8806325157F8C00FB4A47 /* Debug */,
+				4DF8806425157F8C00FB4A47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF8806525157F8C00FB4A47 /* Build configuration list for PBXNativeTarget "Sheets-FetcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF8806625157F8C00FB4A47 /* Debug */,
+				4DF8806725157F8C00FB4A47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF8806825157F8C00FB4A47 /* Build configuration list for PBXNativeTarget "Sheets-FetcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF8806925157F8C00FB4A47 /* Debug */,
+				4DF8806A25157F8C00FB4A47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF8808825158D5100FB4A47 /* Build configuration list for PBXNativeTarget "Sheets-WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF8808925158D5100FB4A47 /* Debug */,
+				4DF8808A25158D5100FB4A47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF880B4251626E600FB4A47 /* Build configuration list for PBXNativeTarget "ShortcutsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF880B5251626E600FB4A47 /* Debug */,
+				4DF880B6251626E600FB4A47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF880B7251626E600FB4A47 /* Build configuration list for PBXNativeTarget "Shortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF880B8251626E600FB4A47 /* Debug */,
+				4DF880B9251626E600FB4A47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DF8803525157F8B00FB4A47 /* Project object */;
+}
