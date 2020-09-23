@@ -40,18 +40,19 @@ struct Provider: IntentTimelineProvider {
     }
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        let hour = Calendar.current.component(.hour, from: Date())
-        print(hour)
+        let currentDate = Date()
+        let hour = Calendar.current.component(.hour, from: currentDate)
         fetchData { data, response in
             defaults.set(data, forKey: "fetchData")
             
             let values: [String: Double] = getValues()
-            let currentDate = Date()
             let entry = SimpleEntry(date: currentDate, values: values, configuration: configuration)
 
             var refreshDate = Calendar.current.date(byAdding: .hour, value: 3, to: currentDate)!
-            if  hour < 9 || hour > 22 {
-                refreshDate = Date() // TODO
+            if  hour > 22 {
+                refreshDate = getTomorrowAt(hour: 9, minutes: 0)
+            } else if hour < 9 {
+                refreshDate = getTodayAt(hour: 9, minutes: 0)
             }
             
             let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
@@ -130,7 +131,7 @@ struct Sheets_WidgetEntryView : View {
                         }).frame(width: width, height: height, alignment: .center)
                     })
                     HStack(alignment: .center, spacing: 0, content: {
-                        Text("Last updated: ").font(.system(size: 9))
+                        Text("Senast uppdaterad: ").font(.system(size: 9))
                         Text(entry.date, style: .time).font(.system(size: 9))
                     }).offset(x: 0, y: 20)
                 })
@@ -166,4 +167,25 @@ struct Sheets_Widget_Dark_Previews: PreviewProvider {
             .environment(\.colorScheme, .dark)
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
+}
+
+func getTomorrowAt(hour: Int, minutes: Int) -> Date {
+    let today = Date()
+    let morrow = Calendar.current.date(byAdding: .day,
+                                       value: 1,
+                                       to: today)
+    return Calendar.current.date(bySettingHour: hour,
+                                 minute: minutes,
+                                 second: 0,
+                                 of: morrow!)!
+
+}
+
+func getTodayAt(hour: Int, minutes: Int) -> Date {
+    let today = Date()
+    return Calendar.current.date(bySettingHour: hour,
+                                 minute: minutes,
+                                 second: 0,
+                                 of: today)!
+
 }
