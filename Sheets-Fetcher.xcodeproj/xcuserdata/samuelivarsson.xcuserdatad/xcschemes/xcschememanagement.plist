@@ -17,12 +17,50 @@
 		<key>Shortcuts.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<key>ShortcutsUI.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4D99D39F254DEC52003ADE65</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DF8803C25157F8B00FB4A47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DF8804D25157F8C00FB4A47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DF8805825157F8C00FB4A47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DF8807525158D4D00FB4A47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DF8809A251626E500FB4A47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DF880A3251626E600FB4A47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

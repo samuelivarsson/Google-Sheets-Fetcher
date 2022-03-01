@@ -24,6 +24,8 @@ class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessag
         switch intent {
         case is UpdateWidgetIntent:
             return UpdateWidgetIntentHandler()
+        case is WakeOnLANIntent:
+            return WakeOnLANIntentHandler()
         default:
             fatalError("No handler for this intent")
         }

@@ -15,7 +15,9 @@ class UpdateWidgetIntentHandler: NSObject, UpdateWidgetIntentHandling {
     let defaults = UserDefaults(suiteName: "group.com.samuelivarsson.Sheets-Fetcher")!
     
     func handle(intent: UpdateWidgetIntent, completion: @escaping (UpdateWidgetIntentResponse) -> Void) {
-        WidgetCenter.shared.reloadAllTimelines()
+        DispatchQueue.main.async{
+            WidgetCenter.shared.reloadAllTimelines()
+        }
         completion(UpdateWidgetIntentResponse.success(result: "Widget was updated!"))
     }
 }

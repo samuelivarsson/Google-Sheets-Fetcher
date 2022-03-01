@@ -21,10 +21,6 @@
 		4DF8808425158D5100FB4A47 /* Sheets_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8807F25158D4D00FB4A47 /* Sheets_Widget.intentdefinition */; };
 		4DF8808725158D5100FB4A47 /* Sheets-WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DF8807625158D4D00FB4A47 /* Sheets-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4DF8809E251626E500FB4A47 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8809D251626E500FB4A47 /* IntentHandler.swift */; };
-		4DF880A6251626E600FB4A47 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF880A5251626E600FB4A47 /* IntentsUI.framework */; };
-		4DF880A9251626E600FB4A47 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF880A8251626E600FB4A47 /* IntentViewController.swift */; };
-		4DF880AC251626E600FB4A47 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF880AA251626E600FB4A47 /* MainInterface.storyboard */; };
-		4DF880B0251626E600FB4A47 /* ShortcutsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DF880A4251626E600FB4A47 /* ShortcutsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4DF880B3251626E600FB4A47 /* Shortcuts.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DF8809B251626E500FB4A47 /* Shortcuts.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4DF880C12516278F00FB4A47 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4DF880C02516278F00FB4A47 /* Intents.intentdefinition */; };
 		4DF880C8251627F800FB4A47 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4DF880C02516278F00FB4A47 /* Intents.intentdefinition */; };
@@ -34,6 +30,8 @@
 		4DF8815C2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8815B2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift */; };
 		4DF8815D2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8815B2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift */; };
 		4DF8815E2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8815B2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift */; };
+		4DFF475C254E50C000CC1D21 /* WakeOnLANIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D99D3B2254DED44003ADE65 /* WakeOnLANIntentHandler.swift */; };
+		4DFF4767254E52B900CC1D21 /* Awake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D99D3D9254E3A5A003ADE65 /* Awake.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,13 +56,6 @@
 			remoteGlobalIDString = 4DF8807525158D4D00FB4A47;
 			remoteInfo = "Sheets-WidgetExtension";
 		};
-		4DF880AE251626E600FB4A47 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4DF8803525157F8B00FB4A47 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4DF880A3251626E600FB4A47;
-			remoteInfo = ShortcutsUI;
-		};
 		4DF880B1251626E600FB4A47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4DF8803525157F8B00FB4A47 /* Project object */;
@@ -81,7 +72,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				4DF880B0251626E600FB4A47 /* ShortcutsUI.appex in Embed App Extensions */,
 				4DF8808725158D5100FB4A47 /* Sheets-WidgetExtension.appex in Embed App Extensions */,
 				4DF880B3251626E600FB4A47 /* Shortcuts.appex in Embed App Extensions */,
 			);
@@ -91,6 +81,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D99D3B2254DED44003ADE65 /* WakeOnLANIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeOnLANIntentHandler.swift; sourceTree = "<group>"; };
+		4D99D3D9254E3A5A003ADE65 /* Awake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Awake.swift; sourceTree = "<group>"; };
 		4DF8803D25157F8B00FB4A47 /* Sheets-Fetcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sheets-Fetcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF8804025157F8B00FB4A47 /* Sheets_FetcherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheets_FetcherApp.swift; sourceTree = "<group>"; };
 		4DF8804225157F8B00FB4A47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,11 +107,7 @@
 		4DF8809B251626E500FB4A47 /* Shortcuts.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Shortcuts.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF8809D251626E500FB4A47 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		4DF8809F251626E500FB4A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DF880A4251626E600FB4A47 /* ShortcutsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShortcutsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF880A5251626E600FB4A47 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
-		4DF880A8251626E600FB4A47 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
-		4DF880AB251626E600FB4A47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		4DF880AD251626E600FB4A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DF880C02516278F00FB4A47 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		4DF8815B2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateWidgetIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,14 +150,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DF880A1251626E600FB4A47 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DF880A6251626E600FB4A47 /* IntentsUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -182,7 +162,6 @@
 				4DF8805C25157F8C00FB4A47 /* Sheets-FetcherUITests */,
 				4DF8807C25158D4D00FB4A47 /* Sheets-Widget */,
 				4DF8809C251626E500FB4A47 /* Shortcuts */,
-				4DF880A7251626E600FB4A47 /* ShortcutsUI */,
 				4DF8807725158D4D00FB4A47 /* Frameworks */,
 				4DF8803E25157F8B00FB4A47 /* Products */,
 			);
@@ -196,7 +175,6 @@
 				4DF8805925157F8C00FB4A47 /* Sheets-FetcherUITests.xctest */,
 				4DF8807625158D4D00FB4A47 /* Sheets-WidgetExtension.appex */,
 				4DF8809B251626E500FB4A47 /* Shortcuts.appex */,
-				4DF880A4251626E600FB4A47 /* ShortcutsUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -268,18 +246,10 @@
 				4DF8809F251626E500FB4A47 /* Info.plist */,
 				4DF880C02516278F00FB4A47 /* Intents.intentdefinition */,
 				4DF8815B2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift */,
+				4D99D3D9254E3A5A003ADE65 /* Awake.swift */,
+				4D99D3B2254DED44003ADE65 /* WakeOnLANIntentHandler.swift */,
 			);
 			path = Shortcuts;
-			sourceTree = "<group>";
-		};
-		4DF880A7251626E600FB4A47 /* ShortcutsUI */ = {
-			isa = PBXGroup;
-			children = (
-				4DF880A8251626E600FB4A47 /* IntentViewController.swift */,
-				4DF880AA251626E600FB4A47 /* MainInterface.storyboard */,
-				4DF880AD251626E600FB4A47 /* Info.plist */,
-			);
-			path = ShortcutsUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,7 +268,6 @@
 			);
 			dependencies = (
 				4DF8808625158D5100FB4A47 /* PBXTargetDependency */,
-				4DF880AF251626E600FB4A47 /* PBXTargetDependency */,
 				4DF880B2251626E600FB4A47 /* PBXTargetDependency */,
 			);
 			name = "Sheets-Fetcher";
@@ -376,23 +345,6 @@
 			productReference = 4DF8809B251626E500FB4A47 /* Shortcuts.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		4DF880A3251626E600FB4A47 /* ShortcutsUI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4DF880B4251626E600FB4A47 /* Build configuration list for PBXNativeTarget "ShortcutsUI" */;
-			buildPhases = (
-				4DF880A0251626E600FB4A47 /* Sources */,
-				4DF880A1251626E600FB4A47 /* Frameworks */,
-				4DF880A2251626E600FB4A47 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ShortcutsUI;
-			productName = ShortcutsUI;
-			productReference = 4DF880A4251626E600FB4A47 /* ShortcutsUI.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -419,9 +371,6 @@
 					4DF8809A251626E500FB4A47 = {
 						CreatedOnToolsVersion = 12.0;
 					};
-					4DF880A3251626E600FB4A47 = {
-						CreatedOnToolsVersion = 12.0;
-					};
 				};
 			};
 			buildConfigurationList = 4DF8803825157F8B00FB4A47 /* Build configuration list for PBXProject "Sheets-Fetcher" */;
@@ -442,7 +391,6 @@
 				4DF8805825157F8C00FB4A47 /* Sheets-FetcherUITests */,
 				4DF8807525158D4D00FB4A47 /* Sheets-WidgetExtension */,
 				4DF8809A251626E500FB4A47 /* Shortcuts */,
-				4DF880A3251626E600FB4A47 /* ShortcutsUI */,
 			);
 		};
 /* End PBXProject section */
@@ -483,14 +431,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DF880A2251626E600FB4A47 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DF880AC251626E600FB4A47 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,14 +485,8 @@
 				4DF8815E2516C05600FB4A47 /* UpdateWidgetIntentHandler.swift in Sources */,
 				4DF8809E251626E500FB4A47 /* IntentHandler.swift in Sources */,
 				4DF880EC25162C7200FB4A47 /* ContentView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DF880A0251626E600FB4A47 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DF880A9251626E600FB4A47 /* IntentViewController.swift in Sources */,
+				4DFF475C254E50C000CC1D21 /* WakeOnLANIntentHandler.swift in Sources */,
+				4DFF4767254E52B900CC1D21 /* Awake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,28 +508,12 @@
 			target = 4DF8807525158D4D00FB4A47 /* Sheets-WidgetExtension */;
 			targetProxy = 4DF8808525158D5100FB4A47 /* PBXContainerItemProxy */;
 		};
-		4DF880AF251626E600FB4A47 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4DF880A3251626E600FB4A47 /* ShortcutsUI */;
-			targetProxy = 4DF880AE251626E600FB4A47 /* PBXContainerItemProxy */;
-		};
 		4DF880B2251626E600FB4A47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4DF8809A251626E500FB4A47 /* Shortcuts */;
 			targetProxy = 4DF880B1251626E600FB4A47 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4DF880AA251626E600FB4A47 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4DF880AB251626E600FB4A47 /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4DF8806025157F8C00FB4A47 /* Debug */ = {
@@ -890,44 +808,6 @@
 			};
 			name = Release;
 		};
-		4DF880B5251626E600FB4A47 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NNPX5ZKT2A;
-				INFOPLIST_FILE = ShortcutsUI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Sheets-Fetcher.ShortcutsUI";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4DF880B6251626E600FB4A47 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NNPX5ZKT2A;
-				INFOPLIST_FILE = ShortcutsUI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Sheets-Fetcher.ShortcutsUI";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		4DF880B8251626E600FB4A47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1010,15 +890,6 @@
 			buildConfigurations = (
 				4DF8808925158D5100FB4A47 /* Debug */,
 				4DF8808A25158D5100FB4A47 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4DF880B4251626E600FB4A47 /* Build configuration list for PBXNativeTarget "ShortcutsUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4DF880B5251626E600FB4A47 /* Debug */,
-				4DF880B6251626E600FB4A47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
