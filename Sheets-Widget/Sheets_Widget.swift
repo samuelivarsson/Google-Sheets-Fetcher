@@ -33,7 +33,7 @@ struct Provider: TimelineProvider {
         let fika = values[3][0] as! Double
         let transport = values[4][0] as! Double
         let ovrigt = values[5][0] as! Double
-        let matvaror = values[6][0] as! Double
+        let matvaror = values[7][0] as! Double
         
         return ["Saldo": saldo, "Mat": mat, "Fika": fika, "Transport": transport, "Ovrigt": ovrigt, "Matvaror": matvaror]
     }
@@ -48,7 +48,7 @@ struct Provider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        fetchData (range: "Oversikt!F26:F32") { result in
+        fetchData (range: "Oversikt!F26:F33") { result in
             switch result {
             case .success((let data, _)):
                 defaults.set(data, forKey: "fetchData")
@@ -170,16 +170,13 @@ struct Sheets_Widget: Widget {
 
 struct Sheets_Widget_Previews: PreviewProvider {
     static var previews: some View {
-        Sheets_WidgetEntryView(entry: SimpleEntry(date: Date(), values: exValues))
+        Group {
+            Sheets_WidgetEntryView(entry: SimpleEntry(date: Date(), values: exValues))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
-    }
-}
-
-struct Sheets_Widget_Dark_Previews: PreviewProvider {
-    static var previews: some View {
-        Sheets_WidgetEntryView(entry: SimpleEntry(date: Date(), values: exValues))
+            Sheets_WidgetEntryView(entry: SimpleEntry(date: Date(), values: exValues))
             .environment(\.colorScheme, .dark)
             .previewContext(WidgetPreviewContext(family: .systemSmall))
+        }
     }
 }
 
@@ -514,16 +511,16 @@ struct Sheets_Widget2: Widget {
 
 struct Sheets_Widget_Previews2: PreviewProvider {
     static var previews: some View {
-        Sheets_WidgetEntryView2(entry: SimpleEntry2(date: Date(), values: exValues2))
+        Group {
+            // Small white
+            Sheets_WidgetEntryView2(entry: SimpleEntry2(date: Date(), values: exValues2))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
-    }
-}
-
-struct Sheets_Widget_Dark_Previews2: PreviewProvider {
-    static var previews: some View {
-        Sheets_WidgetEntryView2(entry: SimpleEntry2(date: Date(), values: exValues2))
+            
+            // Small dark
+            Sheets_WidgetEntryView2(entry: SimpleEntry2(date: Date(), values: exValues2))
             .environment(\.colorScheme, .dark)
             .previewContext(WidgetPreviewContext(family: .systemSmall))
+        }
     }
 }
 
